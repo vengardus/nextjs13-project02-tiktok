@@ -1,14 +1,17 @@
-# Project 02 : Clon TikTok using NextJs 13.3.4 and Supabase as BackEnd.
-* url: 
+# Project 02 : Clon TikTok using NextJs 13.3.4 and Supabase as BackEnd
+
+* url:
 
 ## Development environment
-- ubuntu 22.0.4
-- node.js 18.12
-- yarn 1.22.19
 
+* ubuntu 22.0.4
+* node.js 18.16.0
+* npm 9.6.6
+* yarn 1.22.19
 
 ## Create project
-```
+
+```shell
 cd projects/nextjs
 npx create-next-app@latest --experimental-app
 
@@ -17,17 +20,20 @@ npx create-next-app@latest --experimental-app
     tailwind css: yes
     use src/: yes
 ```
+
 * Note: I have created the project for TypeScript, but for now, I will only use JavaScript.
 
+## Run the development server
 
-## Run the development server:
-```
+```shell
 yarn dev
 ```
 
-## Remove unnecessary code
-* Modify src/app/page.tsx 
-```
+## Remoe unnecessary code
+
+* Modify src/app/page.tsx
+
+```js
 export default function Home() {
   return (
     <main>
@@ -36,8 +42,10 @@ export default function Home() {
   )
 }
 ```
+
 * Modify src/app/layout.tsx
-```
+
+```js
 import './globals.css'
 
 export const metadata = {
@@ -59,8 +67,10 @@ export default function RootLayout({
   )
 }
 ```
+
 * Modify src/app/globals
-```
+
+```js
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -80,7 +90,34 @@ export default function RootLayout({
 
 ## Start development
 
+### Directory structure
+
+```shell
+/src
+  /app
+    globals.css
+    layout.tsx
+    page.tsx
+    /<module>
+      page.jsx
+      /components
+        /< component >
+          < ComponentName.jsx >
+        data.js
+  /hooks
+
+/public
+  /assets
+    /images
+    /videos
+```
+
+* < module >: module name, for example: tiktok
+* < ComponentName.jsx >: component name, for example: VideoPlayer.jsx
+* src/app/< module >/components/data.js: 
+Definition of constants used by the components of the module
+* src/hooks. Public Hooks
+* /public: directory where images and videos should be places
 
 
 ## Deploy on Vercel
-

@@ -4,7 +4,20 @@
 
 /* body {
   background-color: white;
-  color: black|;
+  color: black;
+} */
+
+
+body {
+  font-family: ProximaNova,Arial,Tahoma,PingFangSC,sans-serif;
+  font-size: 14px;
+  color: rgb(17, 19, 31);
+  background-color: rgba(255, 255, 255, 1);
+  overscroll-behavior: contain;
+  overscroll-behavior-x: contain;
+  overscroll-behavior-y: contain;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -12,4 +25,5 @@
     background-color: black;
     color: white;
   }
-} */
+}
+
