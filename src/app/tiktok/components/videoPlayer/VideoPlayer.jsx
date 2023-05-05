@@ -1,5 +1,5 @@
 "use client"
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useHasWindow } from '@/hooks/useHasWindow'
 import { videos } from './../data'
 
@@ -9,29 +9,54 @@ export const VideoPlayer = () => {
   (true)
   const videoRef = useRef(null)
 
+  useEffect(()=> {
+    if ( hasWindow ) {
+      console.log('hey')
+      // videoRef.current.muted = true
+      // videoRef.current.play()
+      // videoRef.current.muted = false
+    }
+  }, [hasWindow])
+
   const handleClickPlay = () => {
+    if ( videoRef.current.muted == true ) {
+      videoRef.current.muted = false
+      return 
+    }
+
     ( playing )? videoRef.current.pause() : videoRef.current.play()
-      
+
+    // videoRef.current.controls = false
+    videoRef.current.muted = false
+
+    
     setPlaying( !playing )
   }
+
 
   if (!hasWindow) return <div>Loading....</div>
 
   return (
     <div className="h-fit w-fit relative"
-      onClick={handleClickPlay}
+      
     >
       <video
         autoPlay={true}
         className=""
         controls={false}
+        loop
         muted={true}
+        playsInline
+        preload='auto'
         ref={videoRef}
         src={videos[0]}
+
+        onClick={handleClickPlay}
       >
       </video>
 
-      <div className={`absolute top-[42%] left-[42%] ${ playing? 'invisible':'visible' }`}>
+      <div className={`absolute top-[42%] left-[42%] ${ playing? 'invisible':'visible' }`}
+      >
         <svg xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
