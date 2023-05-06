@@ -67,6 +67,7 @@ export const VideoPlayer = ({ video }) => {
         </div>
       </div>
 
+      {/* Video Actions */}
       <div
         className={`absolute bottom-[22%] right-[5%]`}
         ref={actionsRef}
