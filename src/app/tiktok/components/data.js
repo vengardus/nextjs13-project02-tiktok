@@ -1,6 +1,6 @@
 export const LIKE_COLOR = {
-  none : 'white',
-  like : 'red'
+  none: 'white',
+  like: 'red'
 }
 
 export const VIDEOS = [
@@ -9,7 +9,9 @@ export const VIDEOS = [
     comments: 3,
     description: '#80s #retro',
     likes: 1000,
+    shared: 21,
     url: '/assets/videos/video1.mp4',
+    userIcon: '/assets/images/users/user01.jpeg',
     username: '@gardus',
     title: 'What I am',
   },
@@ -18,7 +20,9 @@ export const VIDEOS = [
     comments: 21,
     description: 'Rumbo a Chorrillos',
     likes: 1200,
+    shared: 111,
     url: '/assets/videos/video2.mp4',
+    userIcon: '/assets/images/users/user01.jpeg',
     username: 'vengardus',
     title: 'Costa verde',
   },
@@ -27,8 +31,11 @@ export const VIDEOS = [
     comments: 211,
     description: 'Alicia Silverstone',
     likes: 7200,
+    shared: 1231,
     url: '/assets/videos/video3.mp4',
+    userIcon: '/assets/images/users/user01.jpeg',
     username: 'raminsky',
     title: 'Retro 90s',
   }
 ]
+
