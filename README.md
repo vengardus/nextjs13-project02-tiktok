@@ -1,4 +1,4 @@
-# Project 02 : Clon TikTok using NextJs 13.3.4 and Supabase as BackEnd (for mobile device for now)
+# Project 02 : Clon TikTok using NextJs 13.3.4 and Supabase as BackEnd (for mobile devices for now)
 
 * url: <https://nextjs13-project02-tiktok.vercel.app>
 

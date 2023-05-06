@@ -1,9 +1,9 @@
-import { VideoPlayer } from './components/videoPlayer/VideoPlayer'
+import { FeedVideos } from './components/feedVideos/FeedVideos'
 
 function TiktokPage() {
   return (
-    <div className="h-auto w-screen border border-[2px]  border-gray-700 aspect-[9/16]">
-      <VideoPlayer />
+    <div className="h-auto w-screen border border-[0px]  border-gray-700 aspect-[9/16] rounded-[3px] overflow-y-scroll snap-y snap-mandatory">
+      <FeedVideos />
     </div>
 
   )
