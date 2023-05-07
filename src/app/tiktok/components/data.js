@@ -12,7 +12,7 @@ export const VIDEOS = [
     shared: 21,
     url: '/assets/videos/video1.mp4',
     userIcon: '/assets/images/users/user01.jpeg',
-    username: '@gardus',
+    username: 'gardus',
     title: 'What I am',
   },
   {
