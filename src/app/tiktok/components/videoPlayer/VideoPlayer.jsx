@@ -41,6 +41,9 @@ export const VideoPlayer = ({ video }) => {
 
   if (!hasWindow) return <></>
 
+  const videoUrl = `/assets/videos/${video.src}`
+  console.log(videoUrl)
+
   return (
     <div className="h-fit w-fit relative snap-center">
       <video
@@ -52,7 +55,7 @@ export const VideoPlayer = ({ video }) => {
         playsInline
         // preload='auto'
         ref={videoRef}
-        src={video.url}
+        src={videoUrl}
         onClick={handleClickPlay}
         onPlaying={handleOnPlaying}
       />

@@ -9,6 +9,8 @@ export const VideoActions = ({
   heartColor,
   video, 
 }) => {
+  const userIcon = `/assets/images/users/${video.user_icon}`
+
   return (
     <div
       className={`absolute bottom-[24%] right-[3%]`}
@@ -22,11 +24,11 @@ export const VideoActions = ({
             alt="userIcon"
             className='rounded-full border-[0.5px] border-white'
             height={46}
-            src={video.userIcon}
+            src={userIcon}
             priority={true}
             width={46}
             placeholder="blur"
-            blurDataURL={video.userIcon}
+            blurDataURL={userIcon}
           />
         </div>
 
