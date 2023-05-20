@@ -4,8 +4,8 @@ import { useHasWindow } from '@/hooks/useHasWindow'
 import Image from 'next/image'
 import { LIKE_COLOR } from '../data'
 import { VideoActions } from './VideoActions'
-import { VideoInfo } from './VideoInfo'
-import { VideoSound } from './VideoSound'
+import { VideoDescription } from './VideoDescription'
+import { VideoAlbum } from './VideoAlbum'
 
 const imageIcon = '/assets/images/ui/play.png'
 
@@ -81,12 +81,12 @@ export const VideoPlayer = ({ video }) => {
         actionsRef={actionsRef}
       />
 
-      <VideoInfo 
+      <VideoDescription 
         infoRef={infoRef}
         video={video} 
       />
 
-      <VideoSound
+      <VideoAlbum
         video={video}
         soundRef={soundRef}
       />

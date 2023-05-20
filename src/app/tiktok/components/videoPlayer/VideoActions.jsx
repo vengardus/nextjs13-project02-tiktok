@@ -15,8 +15,8 @@ export const VideoActions = ({
       ref={actionsRef}
       style={{ display: 'none' }}
     >
-      <div className='pt-7 flex flex-col space-y-5'>
-        <div>
+      <div className='pt-7 flex flex-col space-y-3'>
+        <div className='pb-4'>
           {/* userIcon */}
           <Image
             alt="userIcon"

@@ -14,6 +14,7 @@ export const VIDEOS = [
     userIcon: '/assets/images/users/user01.jpeg',
     username: 'gardus',
     title: 'What I am',
+    titleSong: 'What I am - Song 80s '
   },
   {
     id: 2,
@@ -25,6 +26,7 @@ export const VIDEOS = [
     userIcon: '/assets/images/users/user01.jpeg',
     username: 'vengardus',
     title: 'Costa verde',
+    titleSong: 'Quitapenas - Javier Calamaro '
   },
   {
     id: 3,
@@ -36,6 +38,7 @@ export const VIDEOS = [
     userIcon: '/assets/images/users/user01.jpeg',
     username: 'raminsky',
     title: 'Retro 90s',
+    titleSong: 'Cheri cheri lady - Mother Talking '
   }
 ]
 

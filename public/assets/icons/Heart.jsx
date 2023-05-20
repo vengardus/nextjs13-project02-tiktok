@@ -1,9 +1,9 @@
 export const Heart = ({ heartColor='white' }) => (
   <svg
     className="text-red-500 w-50 h-50"
-    width='46.8'
+    width='34'
     data-e2e=""
-    height='43.3'
+    height='34'
     viewBox="0 0 48 48"
     fill="none"
     xmlns="http://www.w3.org/2000/svg">
