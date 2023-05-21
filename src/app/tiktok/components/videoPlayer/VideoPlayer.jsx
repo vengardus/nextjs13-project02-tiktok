@@ -7,12 +7,12 @@ import { VideoActions } from './VideoActions'
 import { VideoDescription } from './VideoDescription'
 import { VideoAlbum } from './VideoAlbum'
 
+
 const imageIcon = '/assets/images/ui/play.png'
 
 export const VideoPlayer = ({ video }) => {
   const hasWindow = useHasWindow()
-  const [playing, setPlaying] = useState
-    (true)
+  const [playing, setPlaying] = useState(true)
   const videoRef = useRef(null)
   const actionsRef = useRef(null)
   const infoRef = useRef(null)
@@ -61,18 +61,17 @@ export const VideoPlayer = ({ video }) => {
       />
 
       {/* buttom playing*/}
-      <div className={`absolute top-[45%] left-[45%] 
-          ${playing ? 'invisible' : 'visible'}`
-      }>
-        <div 
+      <div className={`absolute top-[45%] left-[45%] ${playing ? 'invisible' : 'visible'}`}>
+        <div
           className='w-[62px] h-[62px]'
           onClick={handleClickPlay}
         >
-          <Image src={imageIcon}
+          <Image
             alt='play'
-            width={12}
-            height={12}
             className='w-full h-full'
+            height={12}
+            src={imageIcon}
+            width={12}
           />
         </div>
       </div>
@@ -84,9 +83,9 @@ export const VideoPlayer = ({ video }) => {
         actionsRef={actionsRef}
       />
 
-      <VideoDescription 
+      <VideoDescription
         infoRef={infoRef}
-        video={video} 
+        video={video}
       />
 
       <VideoAlbum

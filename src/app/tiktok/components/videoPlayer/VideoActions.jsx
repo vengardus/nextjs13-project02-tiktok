@@ -22,13 +22,13 @@ export const VideoActions = ({
           {/* userIcon */}
           <Image
             alt="userIcon"
+            blurDataURL={userIcon}
             className='rounded-full border-[0.5px] border-white'
             height={46}
             src={userIcon}
+            placeholder="blur"
             priority={true}
             width={46}
-            placeholder="blur"
-            blurDataURL={userIcon}
           />
         </div>
 

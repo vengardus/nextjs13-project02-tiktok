@@ -105,6 +105,7 @@ export default function RootLayout({
           < ComponentName.jsx >
         data.js
   /hooks
+  data.js
 
 /public
   /assets
@@ -114,10 +115,22 @@ export default function RootLayout({
 
 * < module >: module name, for example: tiktok
 * < ComponentName.jsx >: component name, for example: VideoPlayer.jsx
-* src/app/< module >/components/data.js: 
+* src/app/< module >/components/data.js:
 Definition of constants used by the components of the module
 * src/hooks. Public Hooks
 * /public: directory where images and videos should be places
-
+* src/data.js: globals
 
 ## Deploy on Vercel
+
+```bash
+yarn build
+vercel
+
+# next time
+vercel --prod
+```
+
+## Integration with Supabase
+
+* See <https://supabase.com/docs/guides/integrations/vercel>

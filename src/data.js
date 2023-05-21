@@ -1,3 +1,5 @@
+// Globals 
+
 export const TABLES = {
     users: 'users',
     videos: 'videos',

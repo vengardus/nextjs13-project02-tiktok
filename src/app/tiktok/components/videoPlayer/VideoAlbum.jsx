@@ -14,16 +14,14 @@ export const VideoAlbum = ({
     >
       <Image
         alt="userIcon"
+        blurDataURL={userIcon}
         className='rounded-full border-[5.5px] border-gray-600'
         height={46}
-        src={userIcon}
-        priority={true}
-        width={46}
         placeholder="blur"
-        blurDataURL={userIcon}
+        priority={true}
+        src={userIcon}
+        width={46}
       />
     </div>
-
-
   )
 }
